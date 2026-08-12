@@ -1,14 +1,14 @@
-using SweepKit
+using ParameterStudies
 using Documenter
 
-DocMeta.setdocmeta!(SweepKit, :DocTestSetup, :(using SweepKit); recursive=true)
+DocMeta.setdocmeta!(ParameterStudies, :DocTestSetup, :(using ParameterStudies); recursive=true)
 
 makedocs(;
-    modules=[SweepKit],
+    modules=[ParameterStudies],
     authors="Kyle Beggs (beggskw@gmail.com) and contributors",
-    sitename="SweepKit.jl",
+    sitename="ParameterStudies.jl",
     format=Documenter.HTML(;
-        canonical="https://RallypointOne.github.io/SweepKit.jl",
+        canonical="https://RallypointOne.github.io/ParameterStudies.jl",
         edit_link="main",
         assets=String[],
     ),
@@ -18,6 +18,6 @@ makedocs(;
 )
 
 deploydocs(;
-    repo="github.com/RallypointOne/SweepKit.jl",
+    repo="github.com/RallypointOne/ParameterStudies.jl",
     devbranch="main",
 )

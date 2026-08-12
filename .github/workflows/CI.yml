@@ -67,6 +67,6 @@ jobs:
         shell: julia --project=docs --color=yes {0}
         run: |
           using Documenter: DocMeta, doctest
-          using SweepKit
-          DocMeta.setdocmeta!(SweepKit, :DocTestSetup, :(using SweepKit); recursive=true)
-          doctest(SweepKit)
+          using ParameterStudies
+          DocMeta.setdocmeta!(ParameterStudies, :DocTestSetup, :(using ParameterStudies); recursive=true)
+          doctest(ParameterStudies)
